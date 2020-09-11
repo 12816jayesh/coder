@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam Quiz</title>
+</head>
+<style>
+	#line{
+		display: none;
+	}
+	#line2{
+		display: none;
+	}
+	
+</style>
+<body>
+<form name="quiz" id="quiz">
+	<h3>What is the name?</h3>
+	<input type="radio" name="que" value="jayesh">jayesh
+	<input type="radio" name="que"value="rahul">rahul
+	<input type="radio" name="que" value="ram">ram
+	<input type="radio" name="que" value="yash">yash
+	<h3>What is the name?</h3>
+	<input type="radio" name="que1" value="jayesh">jayesh
+	<input type="radio" name="que1"value="rahul">rahul
+	<input type="radio" name="que1" value="vikas">vikas
+	<input type="radio" name="que1" value="yash">yash
+	<h3>What is the name?</h3>
+	<input type="radio" name="que2" value="jayesh">jayesh
+	<input type="radio" name="que2"value="rahul">rahul
+	<input type="radio" name="que2" value="ram">ram
+	<input type="radio" name="que2" value="chandu">chandu
+	<h3>What is the name?</h3>
+	<input type="radio" name="que3" value="jayesh">jayesh
+	<input type="radio" name="que3"value="rahul">rahul
+	<input type="radio" name="que3" value="ram">ram
+	<input type="radio" name="que3" value="yash">yash
+	<h3>What is the name?</h3>
+	<input type="radio" name="que4" value="jayesh">jayesh
+	<input type="radio" name="que4"value="rahul">rahul
+	<input type="radio" name="que4" value="ram">ram
+	<input type="radio" name="que4" value="ketan">ketan
+</form>
+	
+<input type="submit" name="submit" value="submit" onclick="check();">
+	 
+
+
+
+
+
+	 <h4 id="line">Answer is correct</h4>
+	 	 <h4 id="line2">Answer is incorrect</h4>
+	 	
+	 	 	<script type="text/javascript">
+	 	 		
+function check() {
+var c=0;
+var aaa=document.quiz.que.value;
+if(aaa === "rahul")
+{
+	c++;
+}
+var aaa=document.quiz.que1.value;
+if(aaa === "vikas")
+{
+	c++;
+}
+var aaa=document.quiz.que2.value;
+if(aaa === "chandu")
+{
+	c++;
+}
+var aaa=document.quiz.que3.value;
+if(aaa === "yash")
+{
+	c++;
+}
+var aaa=document.quiz.que4.value;
+if(aaa === "ketan")
+{
+	c++;
+}
+document.write("Your marks is "+c+"and its very good");
+};
+
+
+
+</script>
+</body>
+</html>
